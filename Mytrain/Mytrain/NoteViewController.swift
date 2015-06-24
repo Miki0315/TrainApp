@@ -10,6 +10,7 @@ import UIKit
 
 class NoteViewController: UIViewController {
     @IBOutlet weak var paramLabel: UILabel!
+    @IBOutlet weak var lineLabel:UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,12 @@ class NoteViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         super.viewDidDisappear(animated)
         var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        paramLabel.text =  appDelegate.tableViewVal // Labelに値引き渡し用のプロパティから取得して設定する。
+        paramLabel.text =  appDelegate.tableViewVal // Labelに値引き渡し用のプロパティから取得して設定する。（発車時刻）
+        lineLabel.text = appDelegate.tableViewVal2 //路線のラベル
+        //lineLabel.text = "区間"
+        //lineLabel.text = appDelegate.tableViewVal3
+        //lineLabel.text = appDelegate.tableViewVal4
+        
     }
 
     override func didReceiveMemoryWarning() {

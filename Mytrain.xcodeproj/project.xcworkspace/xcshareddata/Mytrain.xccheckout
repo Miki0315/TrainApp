@@ -12,20 +12,24 @@
 	<dict>
 		<key>2E845F77A784BA36DF2F578697764823F474DE49</key>
 		<string>https://github.com/Miki0315/Train.git</string>
+		<key>53FEB458B5C2BA668EAEF6878D7FD70F9EC1AE66</key>
+		<string>https://github.com/Miki0315/TrainApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Mytrain.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>2E845F77A784BA36DF2F578697764823F474DE49</key>
+		<string>../../../Mytrain</string>
+		<key>53FEB458B5C2BA668EAEF6878D7FD70F9EC1AE66</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Miki0315/Train.git</string>
+	<string>https://github.com/Miki0315/TrainApp.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>2E845F77A784BA36DF2F578697764823F474DE49</string>
+	<string>53FEB458B5C2BA668EAEF6878D7FD70F9EC1AE66</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>2E845F77A784BA36DF2F578697764823F474DE49</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Mytrain</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>53FEB458B5C2BA668EAEF6878D7FD70F9EC1AE66</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TrainApp</string>
 		</dict>
 	</array>
 </dict>

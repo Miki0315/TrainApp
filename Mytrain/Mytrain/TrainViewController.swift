@@ -49,6 +49,7 @@ class TrainViewController: UIViewController, UIPickerViewDelegate, UIScrollViewD
         tf2.resignFirstResponder()
         tf3.resignFirstResponder()
         
+        
         return true
     }
     

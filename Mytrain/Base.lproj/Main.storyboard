@@ -110,6 +110,9 @@
                                 <date key="date" timeIntervalSinceReferenceDate="456476985.84343201">
                                     <!--2015-06-20 07:09:45 +0000-->
                                 </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="456764400">
+                                    <!--2015-06-23 15:00:00 +0000-->
+                                </date>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="↓" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMf-yd-euV">
                                 <rect key="frame" x="189" y="398" width="31" height="38"/>
@@ -314,11 +317,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OrM-xQ-I5z">
-                                <rect key="frame" x="0.0" y="107" width="375" height="288"/>
+                                <rect key="frame" x="0.0" y="57" width="375" height="338"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qy9-aC-MLs">
-                                <rect key="frame" x="100" y="490" width="174" height="66"/>
+                                <rect key="frame" x="93" y="522" width="174" height="66"/>
                                 <color key="backgroundColor" red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <state key="normal" title="タイトルに戻る">
@@ -339,7 +342,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pvc-BE-qyP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-80.5" y="1055.5"/>
+            <point key="canvasLocation" x="-94.5" y="1061.5"/>
         </scene>
         <!--Help Btn Controller-->
         <scene sceneID="rRq-dG-Dms">
@@ -396,6 +399,13 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Exm-92-naa">
                                 <rect key="frame" x="56" y="164" width="262" height="413"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <label key="tableFooterView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hde-qx-Pcl">
+                                    <rect key="frame" x="0.0" y="0.0" width="262" height="292"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4w-IS-xZY">
                                 <rect key="frame" x="10" y="603" width="167" height="44"/>
@@ -411,7 +421,7 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6zH-rZ-0zu">
                                 <rect key="frame" x="0.0" y="97" width="375" height="52"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -432,6 +442,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="lineLabel" destination="hde-qx-Pcl" id="s2R-JN-6Em"/>
                         <outlet property="paramLabel" destination="6zH-rZ-0zu" id="Z1c-iq-CDM"/>
                     </connections>
                 </viewController>
@@ -447,7 +458,7 @@
         <image name="btnStress.png" width="430" height="701"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="F8r-9u-FnY"/>
+        <segue reference="URo-wT-58H"/>
         <segue reference="r30-dW-vUQ"/>
     </inferredMetricsTieBreakers>
 </document>
