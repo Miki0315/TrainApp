@@ -20,8 +20,8 @@ class NoteViewController: UIViewController ,UITableViewDataSource, UITableViewDe
     
     override func viewWillAppear(animated: Bool) {
         super.viewDidDisappear(animated)
-        var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        paramLabel.text =  appDelegate.tableViewVal // Labelに値引き渡し用のプロパティから取得して設定する。（発車時刻）
+        //var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        //paramLabel.text =  appDelegate.tableViewVal // Labelに値引き渡し用のプロパティから取得して設定する。（発車時刻）
         //lineLabel.text = appDelegate.tableViewVal2 //路線のラベル
     }
 

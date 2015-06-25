@@ -17,6 +17,7 @@
 		2113F0ED1B32559200F7E817 /* Station.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2113F0EC1B32559200F7E817 /* Station.jpg */; };
 		2113F0F31B32A8A700F7E817 /* Train2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2113F0F21B32A8A700F7E817 /* Train2.gif */; };
 		2113F0F91B32D6C300F7E817 /* Etrain.png in Resources */ = {isa = PBXBuildFile; fileRef = 2113F0F81B32D6C300F7E817 /* Etrain.png */; };
+		212D6F7F1B3C115F00121C59 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212D6F7E1B3C115F00121C59 /* FinishViewController.swift */; };
 		2179EBE31B366CA200BF1F46 /* HelpBtnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2179EBE21B366CA200BF1F46 /* HelpBtnViewController.swift */; };
 		2179EBE51B366D7500BF1F46 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2179EBE41B366D7500BF1F46 /* SelectViewController.swift */; };
 		2179EBE71B366DE000BF1F46 /* TrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2179EBE61B366DE000BF1F46 /* TrainViewController.swift */; };
@@ -49,6 +50,7 @@
 		2113F0EC1B32559200F7E817 /* Station.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Station.jpg; sourceTree = "<group>"; };
 		2113F0F21B32A8A700F7E817 /* Train2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Train2.gif; sourceTree = "<group>"; };
 		2113F0F81B32D6C300F7E817 /* Etrain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Etrain.png; sourceTree = "<group>"; };
+		212D6F7E1B3C115F00121C59 /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
 		2179EBE21B366CA200BF1F46 /* HelpBtnViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HelpBtnViewController.swift; path = Mytrain/HelpBtnViewController.swift; sourceTree = "<group>"; };
 		2179EBE41B366D7500BF1F46 /* SelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SelectViewController.swift; path = Mytrain/SelectViewController.swift; sourceTree = "<group>"; };
 		2179EBE61B366DE000BF1F46 /* TrainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainViewController.swift; path = Mytrain/TrainViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				2113F0EC1B32559200F7E817 /* Station.jpg */,
 				2113F0E01B323E2100F7E817 /* btnStress.png */,
 				2113F0C21B31C90700F7E817 /* Main.storyboard */,
+				212D6F7E1B3C115F00121C59 /* FinishViewController.swift */,
 				2179EBE81B366E1E00BF1F46 /* NoteViewController.swift */,
 				2179EBE61B366DE000BF1F46 /* TrainViewController.swift */,
 				2179EBE41B366D7500BF1F46 /* SelectViewController.swift */,
@@ -248,6 +251,7 @@
 				2179EBE51B366D7500BF1F46 /* SelectViewController.swift in Sources */,
 				2113F0C11B31C90700F7E817 /* ViewController.swift in Sources */,
 				2113F0BF1B31C90600F7E817 /* AppDelegate.swift in Sources */,
+				212D6F7F1B3C115F00121C59 /* FinishViewController.swift in Sources */,
 				2179EBE31B366CA200BF1F46 /* HelpBtnViewController.swift in Sources */,
 				2179EBE71B366DE000BF1F46 /* TrainViewController.swift in Sources */,
 			);
