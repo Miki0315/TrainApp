@@ -18,7 +18,7 @@ class TrainViewController: UIViewController, UIPickerViewDelegate, UIScrollViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        myDatePicker.backgroundColor = UIColor.whiteColor()
+        myDatePicker.backgroundColor = UIColor.whiteColor() //DatePickerの背景を白に
         myDatePicker.addTarget(self, action: "onDidChangeDate:", forControlEvents: .ValueChanged)
         // Delegateを設定する.
         time = ""
@@ -27,6 +27,19 @@ class TrainViewController: UIViewController, UIPickerViewDelegate, UIScrollViewD
         tf3.delegate = self
         // Do any additional setup after loading the view.
     }
+    
+    /*//画面が表示されるときに
+    override func viewWillAppear(animated: Bool) {
+        //ユーザーデフォルトを用意する
+        var myDefault = NSUserDefaults.standardUserDefaults()
+        //データを読みだして
+        var myStr = myDefault.stringArrayForKey("myString")
+        //文字列が入っていたら表示する
+        if let tmpStr = myStr {
+            
+            
+        }
+    }*/
     
     func onDidChangeDate(sender: UIDatePicker){
         

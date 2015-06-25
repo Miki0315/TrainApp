@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NoteViewController: UIViewController {
+class NoteViewController: UIViewController ,UITableViewDataSource, UITableViewDelegate{
     @IBOutlet weak var paramLabel: UILabel!
     @IBOutlet weak var lineLabel:UILabel!
 
@@ -22,11 +22,7 @@ class NoteViewController: UIViewController {
         super.viewDidDisappear(animated)
         var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         paramLabel.text =  appDelegate.tableViewVal // Labelに値引き渡し用のプロパティから取得して設定する。（発車時刻）
-        lineLabel.text = appDelegate.tableViewVal2 //路線のラベル
-        //lineLabel.text = "区間"
-        //lineLabel.text = appDelegate.tableViewVal3
-        //lineLabel.text = appDelegate.tableViewVal4
-        
+        //lineLabel.text = appDelegate.tableViewVal2 //路線のラベル
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,6 +30,31 @@ class NoteViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //行数
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+        
+    }
+    
+    //表示するセルの中身
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+            var cell = UITableViewCell(style: .Default, reuseIdentifier: "myCell")
+            //cell.textLabel?.text = "\(indexPath.row)行目"
+            var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            cell.textLabel?.text = appDelegate.tableViewVal
+        
+            return cell
+    }
+
+    //選択されたときに行う処理
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        println("\(indexPath.row)行目を選択")
+    }
+    
+    //ステータスバーを非表示にする
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
 
     /*
     // MARK: - Navigation
