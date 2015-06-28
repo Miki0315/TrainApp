@@ -30,9 +30,9 @@ class NoteViewController: UIViewController ,UITableViewDataSource, UITableViewDe
         // Dispose of any resources that can be recreated.
     }
     
-    //行数
+    //セルの行数
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 3
         
     }
     
@@ -41,12 +41,17 @@ class NoteViewController: UIViewController ,UITableViewDataSource, UITableViewDe
             var cell = UITableViewCell(style: .Default, reuseIdentifier: "myCell")
             //cell.textLabel?.text = "\(indexPath.row)行目"
             var appDelegate: AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-            cell.textLabel?.text = appDelegate.tableViewVal
+            cell.textLabel?.text = appDelegate.tableViewVal //時間がcellに表示される
+            var strArray:[String] = [appDelegate.tableViewVal, "路線："+appDelegate.tableViewVal2+"線","区間："+appDelegate.tableViewVal3+"から"+appDelegate.tableViewVal4+"まで"] //配列を生成
+            var myTableView: UITableView!
+            
         
+            cell.textLabel!.text = "\(strArray[indexPath.row])"//配列を表示
             return cell
     }
 
-    //選択されたときに行う処理
+    
+    //選択されたときに行う処理　これは画面には表示されない
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("\(indexPath.row)行目を選択")
     }
